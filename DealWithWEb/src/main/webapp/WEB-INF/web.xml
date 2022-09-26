@@ -10,13 +10,35 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   
+  
+   <!-- 서블릿 등록 -->
   <servlet>
   	<servlet-name>first</servlet-name>
   	<servlet-class>servlet.sec01.ex01.FirstServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>firstArt</servlet-name>
+  	<servlet-class>arts.ch5.ex01.FirstServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>secondArt</servlet-name>
+  	<servlet-class>arts.ch5.ex01.SecondServlet</servlet-class>
+  </servlet>
   
+  
+  
+  
+  <!-- 서블릿 맵핑 -->
   <servlet-mapping>
   	<servlet-name>first</servlet-name>
   	<url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>firstArt</servlet-name>
+  	<url-pattern>/art1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>secondArt</servlet-name>
+  	<url-pattern>/art2</url-pattern>
   </servlet-mapping>
 </web-app>

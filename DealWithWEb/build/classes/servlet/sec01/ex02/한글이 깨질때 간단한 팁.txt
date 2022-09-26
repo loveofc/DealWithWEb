@@ -1,0 +1,9 @@
+한글이 깨질때 우선 확인해 볼것..
+
+1. HttpServletResponse의 setContentType()메소드를 사용하여 charset 속성에 한글을 지원하는 문자셋을 지정했는지 확인한다.
+
+2. setContentType()파라미터에 뛰어쓰기가 있는지 확인한다
+setContentType("text/html; charset=utf-8")이 아닌 setContentType("text/html;charset=utf-8")로 뛰어쓰기를 제거해본다.
+
+3. setContetnType()와 getWriter() 메소드 호출 순서를 확인해본다.getWriter()부터 오면 안된다.
+setContetnType(), getWriter()이 순서인지 확인해보자
