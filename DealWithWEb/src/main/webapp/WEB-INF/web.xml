@@ -24,6 +24,10 @@
   	<servlet-name>secondArt</servlet-name>
   	<servlet-class>arts.ch5.ex01.SecondServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>addInfo</servlet-name>
+  	<servlet-class>servlet.sec01.ex03.AdditionalInfoServlet</servlet-class>
+  </servlet>
   
   
   
@@ -40,5 +44,9 @@
   <servlet-mapping>
   	<servlet-name>secondArt</servlet-name>
   	<url-pattern>/art2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>addInfo</servlet-name>
+  	<url-pattern>/addInfo/*</url-pattern>
   </servlet-mapping>
 </web-app>
