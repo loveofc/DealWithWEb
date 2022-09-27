@@ -10,6 +10,15 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   
+  <context-param>
+  	<param-name>testId</param-name>
+  	<param-value>홍길동</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>pwd</param-name>
+  	<param-value>1234</param-value>
+  </context-param>
+  
   
    <!-- 서블릿 등록 -->
   <servlet>
